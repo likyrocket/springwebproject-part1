@@ -2,9 +2,14 @@ package com.started.startedmyApp.model;
 
 import org.springframework.stereotype.Component;
 
-@Component
-public class Product {
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 
+@Component
+@Entity
+public class Product {
+    
+    @Id
     private int prodId;
     private String prodName;
     private int price;
